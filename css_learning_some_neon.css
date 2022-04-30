@@ -26,6 +26,8 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-neon);
-    border: var(--clr-neon) .125em solid;
+    border: currentColor .125em solid;
     padding: .25em 1em;
+    border-radius: .25em;
+    text-shadow: 0 0 0.25em currentColor ;
 }
