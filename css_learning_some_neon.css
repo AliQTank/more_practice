@@ -37,6 +37,7 @@ body {
 }
 
 .neon-button::before {
+    pointer-events: none;
     content: '';
     position: absolute;
     background: var(--clr-neon);
@@ -50,8 +51,22 @@ body {
     opacity: 0.7;
 }
 
-.neon-button:hover {
+.neon-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: yellowgreen;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    
+}
+
+.neon-button:hover,
+.neon-button:focus {
     background: var(--clr-neon);
     color: var(--clr-bg);
     text-shadow: none;
 }
+
